@@ -1,6 +1,7 @@
 # Multimodal Regulatory Packaging & Label Compliance Auditor
 ### Deterministic Vision & Rules Engine for FDA (21 CFR) and UAE MoIAT Standards
 
+[![CI](https://github.com/NoorSiddiquiDubai/multimodal-compliance-auditor/actions/workflows/ci.yml/badge.svg)](https://github.com/NoorSiddiquiDubai/multimodal-compliance-auditor/actions/workflows/ci.yml)
 [![Build & Test](https://img.shields.io/badge/tests-5%2F5%20passed-brightgreen.svg)]()
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110.0-009688.svg)]()
 [![Pydantic v2](https://img.shields.io/badge/Pydantic-v2.6-E92063.svg)]()
@@ -95,7 +96,32 @@ docker-compose up --build -d
 
 ---
 
-## 📬 Enterprise Inquiries & Production Deployment
+## How to Run
+
+### Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### Run tests
+```bash
+pytest --tb=short
+```
+
+### Run the API locally
+```bash
+uvicorn app.main:app --reload --port 8000
+```
+
+### Run with Docker
+```bash
+docker build -t multimodal-compliance-auditor .
+docker run -p 8000:8000 multimodal-compliance-auditor
+```
+
+---
+
+## Enterprise Inquiries & Production Deployment
 
 For enterprise integrations, bespoke ruleset engineering, and high-throughput label inspection pipelines:
 * **Architect:** Noor Siddiqui (Acting CTO & Sovereign Systems Architect)
