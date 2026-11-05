@@ -2,7 +2,6 @@
 ### Deterministic Vision & Rules Engine for FDA (21 CFR) and UAE MoIAT Standards
 
 [![CI](https://github.com/NoorSiddiquiDubai/multimodal-compliance-auditor/actions/workflows/ci.yml/badge.svg)](https://github.com/NoorSiddiquiDubai/multimodal-compliance-auditor/actions/workflows/ci.yml)
-[![Build & Test](https://img.shields.io/badge/tests-5%2F5%20passed-brightgreen.svg)]()
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110.0-009688.svg)]()
 [![Pydantic v2](https://img.shields.io/badge/Pydantic-v2.6-E92063.svg)]()
 [![Docker Ready](https://img.shields.io/badge/Docker-Containerized-2496ED.svg)]()
@@ -75,27 +74,6 @@ This prevents post-audit tampering and gives quality assurance teams, customs br
 
 ---
 
-## 🚀 Quickstart & Local Execution
-
-### 1. Run Unit Tests (100% Pass Rate)
-```bash
-python -m unittest discover -s tests -p "test_*.py" -v
-```
-
-### 2. Run API Locally
-```bash
-pip install -r requirements.txt
-uvicorn app.main:app --reload --port 8000
-```
-Open API Docs: `http://localhost:8000/docs`
-
-### 3. Run with Docker Compose
-```bash
-docker-compose up --build -d
-```
-
----
-
 ## How to Run
 
 ### Install dependencies
@@ -112,11 +90,11 @@ pytest --tb=short
 ```bash
 uvicorn app.main:app --reload --port 8000
 ```
+Open API docs: `http://localhost:8000/docs`
 
 ### Run with Docker
 ```bash
-docker build -t multimodal-compliance-auditor .
-docker run -p 8000:8000 multimodal-compliance-auditor
+docker compose up --build -d
 ```
 
 ---
@@ -124,6 +102,6 @@ docker run -p 8000:8000 multimodal-compliance-auditor
 ## Enterprise Inquiries & Production Deployment
 
 For enterprise integrations, bespoke ruleset engineering, and high-throughput label inspection pipelines:
-* **Architect:** Noor Siddiqui (Acting CTO & Sovereign Systems Architect)
+* **Architect:** Noor Siddiqui (AI Innovation Leader · Founder, IZN AI · Director, Agro National)
 * **Master Profile & Direct Bookings:** [linktr.ee/noorsiddiqui](https://linktr.ee/noorsiddiqui)
-* **Fixed-Price Service Package:** Available on [Contra](https://contra.com/noorsiddiqui)
+* **Fixed-Price Service Package:** Available via [linktr.ee/noorsiddiqui](https://linktr.ee/noorsiddiqui)
